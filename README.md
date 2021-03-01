@@ -8,7 +8,7 @@ Any signed-up user can list a new space
 
 ## User Stories
 
-### User can sign up
+### User cannot sign up
 
 ```
 As a user,
