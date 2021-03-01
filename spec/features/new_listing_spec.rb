@@ -9,3 +9,5 @@ feature 'new listing' do
         click_button('Submit')
     end
 end
+
+#expect page to have xpath
