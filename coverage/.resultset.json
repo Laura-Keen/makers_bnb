@@ -1,7 +1,11 @@
 {
   "RSpec": {
     "coverage": {
+
       "/Users/joannabrigham/Projects/Week5/makers_bnb/spec/features/Hello_spec.rb": {
+
+      "/Users/lee/Desktop/Projects/Week5/makers_bnb/spec/features/Hello_spec.rb": {
+
         "lines": [
           null,
           null,
@@ -27,8 +31,28 @@
           null,
           null
         ]
+      },
+      "/Users/lee/Desktop/Projects/Week5/makers_bnb/spec/features/new_listing_spec.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
+
     "timestamp": 1614617624
+
+    "timestamp": 1614619210
   }
 }
