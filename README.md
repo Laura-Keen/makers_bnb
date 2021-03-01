@@ -33,9 +33,11 @@ I would like to list my space
 5. XP techniques - Keeping everyone on the same page!
 6. Everyone's happy!
 
+## User Story 1
+
 ![Screenshot 2021-03-01 at 15 19 21](https://user-images.githubusercontent.com/76166627/109517867-9d298780-7aa1-11eb-8199-e365613abc23.png)
 
-User Story 1
+
 ```
 As a user,
 So I can use Maker’s BnB
