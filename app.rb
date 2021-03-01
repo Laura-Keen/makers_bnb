@@ -4,9 +4,17 @@ require 'pg'
 class BnB < Sinatra::Base
     
     get '/' do
-        'Hello BnB'
+        
+        erb :index
     end
 
+    get '/signup' do
+        erb :signup
+    end
+
+    post '/signup' do
+        redirect ('/')
+    end
 
     run! if app_file == $0
 end

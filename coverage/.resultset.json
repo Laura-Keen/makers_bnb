@@ -1,8 +1,25 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/raf/Projects/Week5/makers_bnb/spec/features/Hello_spec.rb": {
+      "/Users/joannabrigham/Projects/Week5/makers_bnb/spec/features/Hello_spec.rb": {
         "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/joannabrigham/Projects/Week5/makers_bnb/spec/features/signing_up_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           1,
           1,
           1,
@@ -12,6 +29,6 @@
         ]
       }
     },
-    "timestamp": 1614610442
+    "timestamp": 1614617624
   }
 }
