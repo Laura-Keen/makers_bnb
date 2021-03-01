@@ -34,3 +34,23 @@ I would like to list my space
 6. Everyone's happy!
 
 ![Screenshot 2021-03-01 at 15 19 21](https://user-images.githubusercontent.com/76166627/109517867-9d298780-7aa1-11eb-8199-e365613abc23.png)
+
+User Story 1
+```
+As a user,
+So I can use Maker’s BnB
+I would like to be able to sign up
+
+alias user="User"
+alias client="Client"
+alias server="Server"
+
+user->client:"click signup"
+client->server:"GET request"
+server->client:"signup page"
+client->user:"Fill out details please!"
+user->client:"fills in the form"
+client->server:"POST request with params"
+server->client:"Details saved in sessions"
+client->user:"Congrats you have signed up"
+```
