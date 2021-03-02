@@ -4,6 +4,7 @@ ENV['ENVIRONMENT'] = 'test'
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
 require 'capybara'
+require 'features/web_helper'
 require 'rspec'
 require 'capybara/rspec'
 require 'simplecov'

@@ -1,1 +1,5 @@
-<a href="/signup">Sign Up</a>
+<% if @first_name != nil%>
+	<%="Hey #{@first_name}! Welcome to Maker's BnB"%>
+<% else %>
+	<a href="/signup">Sign Up</a>
+<% end %>
