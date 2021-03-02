@@ -2,6 +2,7 @@ require 'sinatra/base'
 require 'pg'
 
 class BnB < Sinatra::Base
+  enable :sessions
     
     get '/' do
         
@@ -21,6 +22,9 @@ class BnB < Sinatra::Base
 		end
 
     post '/listings' do
+      session[:title] = params[:Title]
+      session[:price] = params[:Price]
+      session[:description] = params[:Description]
       redirect('/')
 		end
  
