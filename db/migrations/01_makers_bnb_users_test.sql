@@ -1,0 +1,2 @@
+CREATE DATABASE makers_bnb_test;
+CREATE TABLE users (user_id SERIAL PRIMARY KEY, first_name VARCHAR(60), last_name VARCHAR(60), username VARCHAR(60) UNIQUE, email VARCHAR(300) UNIQUE, password VARCHAR(60));

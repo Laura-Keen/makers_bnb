@@ -5,6 +5,15 @@
 ```
 Any signed-up user can list a new space
 ```
+### To set up a database, please do the following:
+
+```
+- Connect to psql
+- Create the database using the psql command CREATE DATABASE makers_bnb;
+- Connect to the database using the pqsl command \c makers_bnb;
+- Run the query we have saved in each of the files in /db/migrations
+
+
 
 ## User Stories
 
