@@ -2,10 +2,11 @@ require 'sinatra/base'
 require 'pg'
 
 class BnB < Sinatra::Base
-    
-    get '/' do
-        
-        erb :index
+enable :sessions
+
+    get '/' do   
+			@first_name = session[:first_name]
+        erb :index				
     end
 
     get '/signup' do
@@ -13,7 +14,12 @@ class BnB < Sinatra::Base
     end
 
     post '/signup' do
-        redirect ('/')
+			session[:first_name] = params[:first_name]
+			session[:last_name] = params[:last_name]
+			session[:username] = params[:username]
+			session[:email] = params[:email]
+			session[:password] = params[:password]
+			redirect ('/')
     end
 
     get '/listings/new' do
