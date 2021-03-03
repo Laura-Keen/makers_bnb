@@ -28,13 +28,17 @@ enable :sessions
       erb :listings_new
 		end
 
+    get '/listings' do
+      @listings = Listings.all
+      erb :listings
+    end
+
     post '/listings' do
       listings = Listings.create(username: params['username'], title: params['title'], description: params['description'], price: params['price'])
-      # session[:title] = params[:Title]
-      # session[:price] = params[:Price]
-      # session[:description] = params[:Description]
       redirect('/')
 		end
+
+    
  
 
     run! if app_file == $0

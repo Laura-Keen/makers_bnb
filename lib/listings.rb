@@ -11,6 +11,18 @@ attr_reader :listing_id, :username, :title, :description, :price
         @price = price
     end
 
+    def self.all
+      if ENV['ENVIRONMENT'] == 'test'
+        connection = PG.connect(dbname: 'makers_bnb_test')
+      else
+        connection = PG.connect(dbname: 'makers_bnb')
+      end
+      result = connection.exec("SELECT * FROM listings")
+      result.map do |listing|
+        Listings.new(listing_id: listing["listing_id"], username: listing["username"], title: listing["title"], description: listing["description"], price: listing["price"])
+      end
+    end
+
     def self.create(username:, title:, description:, price:)
         if ENV['ENVIRONMENT'] == 'test'
           connection = PG.connect(dbname: 'makers_bnb_test')
