@@ -10,7 +10,7 @@ require 'capybara/rspec'
 require 'simplecov'
 require 'simplecov-console'
 require 'pg'
-require_relative './setup_test_database'
+require_relative 'db_helpers'
 
 
 RSpec.configure do |config|
