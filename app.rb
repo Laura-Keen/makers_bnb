@@ -1,3 +1,4 @@
+require_relative './lib/user.rb'
 require 'sinatra/base'
 require 'pg'
 require './lib/listings.rb'
@@ -8,6 +9,7 @@ enable :sessions
 
     get '/' do   
 			@first_name = session[:first_name]
+	
       erb :index				
     end
 
@@ -16,11 +18,14 @@ enable :sessions
     end
 
     post '/signup' do
-			session[:first_name] = params[:first_name]
-			session[:last_name] = params[:last_name]
-			session[:username] = params[:username]
-			session[:email] = params[:email]
-			session[:password] = params[:password]
+			@user = User.create(
+				first_name: params[:first_name],
+				last_name: params[:last_name],
+				username: params[:username],
+				email: params[:email],
+				password: params[:password]
+			)
+			session[:first_name] = @user.first_name
 			redirect ('/')
     end
 
