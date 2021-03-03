@@ -47,15 +47,16 @@
         "lines": [
           1,
           1,
-          null,
-          1,
-          null,
-          1,
-          1,
           1,
           null,
           1,
           null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           1,
           1,
           1,
@@ -94,12 +95,23 @@
           null
         ]
       },
+      "/Users/joannabrigham/Projects/Week5/makers_bnb/spec/database_helpers.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/joannabrigham/Projects/Week5/makers_bnb/spec/unit/user_spec.rb": {
         "lines": [
 
         ]
       }
     },
-    "timestamp": 1614771097
+    "timestamp": 1614774298
   }
 }
