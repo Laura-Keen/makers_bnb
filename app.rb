@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'pg'
+require './lib/listings.rb'
 
 class BnB < Sinatra::Base
 
@@ -28,9 +29,10 @@ enable :sessions
 		end
 
     post '/listings' do
-      session[:title] = params[:Title]
-      session[:price] = params[:Price]
-      session[:description] = params[:Description]
+      listings = Listings.create(username: params['username'], title: params['title'], description: params['description'], price: params['price'])
+      # session[:title] = params[:Title]
+      # session[:price] = params[:Price]
+      # session[:description] = params[:Description]
       redirect('/')
 		end
  
