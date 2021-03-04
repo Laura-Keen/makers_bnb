@@ -12,6 +12,35 @@
           null
         ]
       },
+      "/Users/laurakeen/Projects/makers_bnb/spec/features/home_button_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/laurakeen/Projects/makers_bnb/spec/features/logout_spec.rb": {
         "lines": [
           1,
@@ -19,8 +48,8 @@
           1,
           1,
           1,
-          0,
-          0,
+          1,
+          1,
           null,
           null
         ]
@@ -170,6 +199,6 @@
         ]
       }
     },
-    "timestamp": 1614871121
+    "timestamp": 1614872316
   }
 }
