@@ -1,11 +1,13 @@
 require_relative './lib/user.rb'
 require 'sinatra/base'
+require 'sinatra/flash'
 require 'pg'
 require './lib/listings.rb'
 
 class BnB < Sinatra::Base
 
 enable :sessions
+register Sinatra::Flash
 
     get '/' do   
 			@first_name = session[:first_name]
@@ -26,7 +28,7 @@ enable :sessions
         session[:user_id] = user.user_id
         redirect('/')
       else
-        flash[:notice] = 'Please check your email or password.'
+        flash[:notice] = 'Please check your username or password.'
         redirect('/sessions/new')
       end
     end
