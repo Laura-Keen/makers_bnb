@@ -58,9 +58,14 @@ register Sinatra::Flash
     end
 
     post '/listings' do
-      listings = Listings.create(username: params['username'], title: params['title'], description: params['description'], price: params['price'])
+      listings = Listings.create(username: session[:username], title: params['title'], description: params['description'], price: params['price'])
       redirect('/')
 		end
+
+    get '/logout' do
+      session.clear
+      erb :index
+    end
 
     
  
