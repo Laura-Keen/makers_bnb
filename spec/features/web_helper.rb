@@ -18,7 +18,6 @@ end
 
 def create_listing
   visit 'listings/new'
-  fill_in('username', with: 'bobby')
   fill_in('title', with: 'My House')
   fill_in('price', with: '100')
   fill_in('description', with: '2 bedroom house')
