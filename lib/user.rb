@@ -31,6 +31,7 @@ class User
         end
 
         result = connection.exec("SELECT * FROM users WHERE username = '#{username}'")
+        return unless result.any?
         User.new(user_id: result[0]['user_id'], username: result[0]['username'], first_name: result[0]['first_name'], last_name: result[0]['last_name'], password: result[0]['password'], email: result[0]['email'])
 
     end    
