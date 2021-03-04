@@ -10,6 +10,7 @@ gem 'sinatra'
 gem 'pg'
 
 group :test do
+    gem 'rake'
     gem 'capybara'
     gem 'rspec'
     gem 'rubocop', '0.79.0'
