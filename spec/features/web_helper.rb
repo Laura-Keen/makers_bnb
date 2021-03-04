@@ -9,11 +9,18 @@ def sign_up
 	click_button 'Sign Up'
 end
 
+def sign_in
+	visit('/sessions/new')
+	fill_in :username, with: 'bobby'
+    fill_in :password, with: 'cabbage'
+    click_button('Sign in')
+end
+
 def create_listing
   visit 'listings/new'
-  fill_in('Username', with: 'bobisthebest')
-  fill_in('Title', with: 'My House')
-  fill_in('Price', with: '100')
-  fill_in('Description', with: '2 bedroom house')
+  fill_in('username', with: 'bobby')
+  fill_in('title', with: 'My House')
+  fill_in('price', with: '100')
+  fill_in('description', with: '2 bedroom house')
   click_button('Submit')
 end
