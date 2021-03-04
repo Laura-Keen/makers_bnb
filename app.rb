@@ -13,6 +13,18 @@ enable :sessions
       erb :index				
     end
 
+    get '/sessions/new' do
+      erb :signin
+    end
+
+    post '/sessions' do
+      user = User.authenticate(username: params[:username], password: params[:password])
+      session[:username] = user.username
+      session[:first_name] = user.first_name
+      session[:user_id] = user.user_id
+      redirect('/')
+    end
+
     get '/signup' do
         erb :signup
     end
@@ -25,8 +37,7 @@ enable :sessions
 				email: params[:email],
 				password: params[:password]
 			)
-			session[:first_name] = @user.first_name
-			redirect ('/')
+			redirect ('/sessions/new')
     end
 
     get '/listings/new' do

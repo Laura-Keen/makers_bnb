@@ -18,4 +18,14 @@ describe User do
             expect(user.user_id).to eq user_persisted_data['user_id']
         end
     end
+
+    describe '#authenticate' do
+        it 'signs in a user if username exists' do
+            user = User.create(first_name: 'Bob', last_name: 'Smith', username: 'bobby', email: 'bobby@smith.com', password: 'cabbage')
+            authenticated_user = User.authenticate(username: 'bobby' , password: 'cabbage')
+
+            expect(authenticated_user.user_id).to eq user.user_id
+        end
+    end
 end
+
