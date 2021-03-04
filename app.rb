@@ -19,10 +19,16 @@ enable :sessions
 
     post '/sessions' do
       user = User.authenticate(username: params[:username], password: params[:password])
-      session[:username] = user.username
-      session[:first_name] = user.first_name
-      session[:user_id] = user.user_id
-      redirect('/')
+      
+      if user
+        session[:username] = user.username
+        session[:first_name] = user.first_name
+        session[:user_id] = user.user_id
+        redirect('/')
+      else
+        flash[:notice] = 'Please check your email or password.'
+        redirect('/sessions/new')
+      end
     end
 
     get '/signup' do
