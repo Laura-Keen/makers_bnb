@@ -4,7 +4,6 @@ feature 'new listing' do
       sign_up
       sign_in
       click_link('New Listing')
-      expect(page).to have_field('username')
       expect(page).to have_field('title')
       expect(page).to have_field('price')
       expect(page).to have_field('description')
