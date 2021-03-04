@@ -1,6 +1,9 @@
+<h1> Makers B&B </h1>
+
 <% if @first_name != nil%>
 	<%="Hey #{@first_name}! Welcome to Maker's BnB"%>
   <a href='/listings/new'> New Listing </a>
+  <a href='/logout'> Log Out </a>
 <% else %>
 	<a href='/sessions/new'> Sign In </a>
 	<a href="/signup">Sign Up</a>
