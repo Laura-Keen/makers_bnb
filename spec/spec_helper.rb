@@ -11,15 +11,17 @@ require 'simplecov'
 require 'simplecov-console'
 require 'pg'
 require_relative 'db_helpers'
+require 'rake'
 
 
 RSpec.configure do |config|
   config.before(:each) do
-    setup_test_database
+    Rake::Task['test_database_setup'].execute
   end
 end
 
 Capybara.app = BnB
+Rake.application.load_rakefile
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
   SimpleCov::Formatter::Console,
