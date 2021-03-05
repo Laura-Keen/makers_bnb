@@ -1,10 +1,12 @@
-<h2>
-	<%= flash[:notice]%>
-</h2>
+<% if flash[:notice] %>
+  <p> <img src="/images/errormessage.jpg" alt="Frog Icon" style="width:100px;height:100px;"> 
+  <%= flash[:notice]%> </p>
+<% end %>
+<h2> <img src="/images/dive_in.jpg" alt="Frog Icon" style="width:100px;height:100px;"> Dive In</h2>
 <form action="/sessions" method="post">
   <input type="username" name="username" placeholder='Username'/>
   <input type="password" name="password" placeholder='Password' />
-  <input type="submit" value="Sign in" />
+  <input type="submit" value="Dive In" />
 </form>
 
 <a href='/'>Home</a>

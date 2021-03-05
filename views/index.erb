@@ -1,12 +1,14 @@
-<h1> Makers B&B </h1>
+<h1>  <img src="/images/home-icon.jpg" alt="Frog Icon" style="width:150px;height:150px;"> LilyPad </h1>
+  
 
-<% if @first_name != nil%>
-	<%="Hey #{@first_name}! Welcome to Maker's BnB"%>
-  <a href='/listings/new'> New Listing </a>
-  <a href='/logout'> Log Out </a>
-<% else %>
-	<a href='/sessions/new'> Sign In </a>
-	<a href="/signup">Sign Up</a>
-<% end %>
+    <% if @first_name != nil%>
+      <p> <%="Hey #{@first_name}! Welcome to LilyPad"%> </p>
+      <br>
+      <a href='/listings/new'> New LilyPad </a>
+      <a href='/logout'> Log Out </a>
+    <% else %>
+      <a href='/sessions/new'> Dive In </a>
+      <a href="/signup">Sign Up</a>
+    <% end %>
 
-<a href='/listings'> View All Listings </a>
+<a href='/listings'> View All LilyPads </a>

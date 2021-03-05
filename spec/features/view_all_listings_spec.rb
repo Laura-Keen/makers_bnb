@@ -4,7 +4,7 @@ feature 'view listings' do
     sign_up
     sign_in
     create_listing
-    click_link 'View All Listings'
+    click_link 'View All LilyPads'
     expect(page).to have_content 'bobby'
     expect(page).to have_content 'My House'
     expect(page).to have_content '100'

@@ -28,7 +28,7 @@ register Sinatra::Flash
         session[:user_id] = user.user_id
         redirect('/')
       else
-        flash[:notice] = 'Please check your username or password.'
+        flash[:notice] = 'Please check your username or password'
         redirect('/sessions/new')
       end
     end
