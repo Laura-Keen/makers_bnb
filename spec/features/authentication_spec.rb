@@ -11,7 +11,7 @@ feature 'authentication' do
         visit('/sessions/new')
 	    fill_in :username, with: 'bobster'
         fill_in :password, with: 'cabbage'
-        click_button('Sign in')
+        click_button('Dive In')
 
         expect(page).not_to have_content 'Hey bob'
         expect(page).to have_content 'Please check your username or password'

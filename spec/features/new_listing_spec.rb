@@ -3,7 +3,7 @@ feature 'new listing' do
       visit('/')
       sign_up
       sign_in
-      click_link('New Listing')
+      click_link('New LilyPad')
       expect(page).to have_field('title')
       expect(page).to have_field('price')
       expect(page).to have_field('description')
