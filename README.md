@@ -1,12 +1,17 @@
-# Maker's BnB
+# Makers BnB
 
-## MVP
+The goal of this project is to make a simplified clone of AirBnb.
 
-```
-Any signed-up user can list a new space
-```
-### To set up a database, please do the following:
+We worked on this project in a team of 5 and had one week to do it. 
 
+[Set Up Instructions](#set-up-instructions) | [Team Goals](#team-goals) | [Planning](#planning) | [Tech](#tech) | [Approach](#approach) 
+
+## Set Up Instructions
+Clone this repository to your local machine.
+
+In your terminal, run `bundle install` to install all gems needed.
+
+**To set up the database, please do the following:**
 ```
 - Connect to psql
 - Create the database using the psql command CREATE DATABASE makers_bnb;
@@ -14,26 +19,7 @@ Any signed-up user can list a new space
 - Run the query we have saved in each of the files in /db/migrations
 ````
 
-
-## User Stories
-
-### User can sign up
-
-```
-As a user,
-So I can use Maker’s BnB
-I would like to be able to sign up
-```
-
-### User can list a space
-
-```
-As a user
-So that I can advertise my space
-I would like to list my space
-```
-
-## Goals
+## Team Goals
 
 1. Better TDD 
 2. Solving in the simplest way possible
@@ -42,46 +28,46 @@ I would like to list my space
 5. XP techniques - Keeping everyone on the same page!
 6. Everyone's happy!
 
-## User Story 1
+## Planning
 
-![Screenshot 2021-03-01 at 15 19 21](https://user-images.githubusercontent.com/76166627/109517867-9d298780-7aa1-11eb-8199-e365613abc23.png)
+[Trello Board](https://trello.com/b/2ga0OPTw/makers-bnb)
 
 
+
+### MVP (Minimum Viable Prouct)
+
+```
+Any signed-up user can list a new space
+```
+### User Stories
+
+**User can sign up**
 ```
 As a user,
 So I can use Maker’s BnB
 I would like to be able to sign up
-
-alias user="User"
-alias client="Client"
-alias server="Server"
-
-user->client:"click signup"
-client->server:"GET request"
-server->client:"signup page"
-client->user:"Fill out details please!"
-user->client:"fills in the form"
-client->server:"POST request with params"
-server->client:"Details saved in sessions"
-client->user:"Congrats you have signed up"
 ```
-## User Story 2
+![Screenshot 2021-03-01 at 15 19 21](https://user-images.githubusercontent.com/76166627/109517867-9d298780-7aa1-11eb-8199-e365613abc23.png)
 
-![Screenshot 2021-03-01 at 16 10 57](https://user-images.githubusercontent.com/76166627/109524836-dc0f0b80-7aa8-11eb-908c-2ffbdb80c58f.png)
-
+**User can list a space**
 ```
 As a user
 So that I can advertise my space
 I would like to list my space
-
-alias user="User"
-alias client="Client"
-alias server="Server"
-
-user->client: "Visit '/listings/new'"
-client->server: "GET request for '/listings/new' page"
-server->client: "Here's the HTML for the page to create a new listing"
-client->user: "Renders the HTML for the user"
-user->client: "Enters details of listing"
-client->server: "POST request with details"
 ```
+
+![Screenshot 2021-03-01 at 16 10 57](https://user-images.githubusercontent.com/76166627/109524836-dc0f0b80-7aa8-11eb-908c-2ffbdb80c58f.png)
+
+## Tech
+
+Ruby, Sinatra, Rspec, Capybara
+
+## Approach
+
+As a team we decided that we wanted to focus on learning and developing our skills and took a quality over quantity approach. 
+
+Something that was important to us was making sure that everyone on the team understood all of the code. To facilitate this we would have a stand up in the morning to decide what tickets would be worked on that day and then we had a team retro in the afternoon to review work, merge our GitHub branches and explain the code to anyone in the team who felt that they didn't understand how a certain feature worked or why the code had been written in a certain way.
+
+We followed an agile work flow and used GitHub issues to break tasks down into tickets. We split into one pair and one group of three and rotated this every day so that we would all have an opportunity to work with different people in the group and so that everyone could work on every feature. In our morning stand ups we would decide which was the more challenging ticket of the day and this would be given to the group of three, whilst the less challenging ticket would be taken on by the pair.
+
+[Back to top](#makers-bnb)

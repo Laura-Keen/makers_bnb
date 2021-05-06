@@ -3,10 +3,19 @@
 <ul>
   <% @listings.each do |listing| %>
     <li>
-    <%= listing.username %>,
-    <%= listing.title %>,
+    <%= listing.username %>
+    </br>
+    </br>
+    <b> <%= listing.title %> </b>
+    </br>
+    </br>
     <%= listing.description %>,
+    </br>
+    </br>
     £<%= listing.price %> 
+    _______________________________________________________________________________
+    </br>
+    </br>
     </li>
   <% end %>
 </ul>
