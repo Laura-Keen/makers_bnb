@@ -91,7 +91,7 @@ I would like to list my space
 
 ## Tech
 
-Ruby, Sinatra, Rspec, Capybara
+Ruby, Sinatra, Rspec, Capybara, PostgreSQL
 
 ## Approach
 
