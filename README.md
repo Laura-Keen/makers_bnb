@@ -9,24 +9,31 @@ We worked on this project in a team of 5 and had one week to do it.
 ## Demo 
 
 **Homepage**: Gives user the option to log in, sign up or view listings.
+
 ![Screenshot 2021-05-05 at 16 25 45](https://user-images.githubusercontent.com/60509804/117288595-92092400-ae63-11eb-8fc7-5fbf0025b45d.png)
 
 **Sign Up**: User can sign up with email to make an account.
+
 ![Screenshot 2021-05-05 at 16 26 41](https://user-images.githubusercontent.com/60509804/117288104-0b544700-ae63-11eb-8ffa-ccdfe02b51ff.png)
 
 **Dive In**: User can log in to their account if they already have one.
+
 ![Screenshot 2021-05-05 at 16 25 59](https://user-images.githubusercontent.com/60509804/117287930-d647f480-ae62-11eb-93d5-ee17307ae9fe.png)
 
 **Incorrect Username or Password**: User receives an error notice if their username or password is incorrect.
+
 ![Screenshot 2021-05-06 at 12 11 20](https://user-images.githubusercontent.com/60509804/117289234-44d98200-ae64-11eb-97d2-51466df18c6a.png)
 
 **Welcome**: Once user has signed in, they will get a welcome message including their first name and they now have the options to make a new listing or logout as well as the original view all listings.
+
 ![Screenshot 2021-05-05 at 16 27 58](https://user-images.githubusercontent.com/60509804/117288386-5a9a7780-ae63-11eb-8e30-42a7f9a53e63.png)
 
 **New Listing**: User can list their property for rent - they must include a title, a brief description and a price.
+
 ![Screenshot 2021-05-05 at 16 28 08](https://user-images.githubusercontent.com/60509804/117287813-ab5da080-ae62-11eb-93c2-eeab233ef0a2.png)
 
 **View Listings**: User can see what listings are available - this includes the username of the person who owns the listing, a title and description and the price per night.
+
 ![Screenshot 2021-05-05 at 16 37 06](https://user-images.githubusercontent.com/60509804/117287678-836e3d00-ae62-11eb-8d39-d8a7154905b2.png)
 
 ## Set Up Instructions
