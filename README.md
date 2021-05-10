@@ -60,7 +60,8 @@ In your terminal, run `bundle install` to install all gems needed.
 
 ## Planning
 
-[Trello Board](https://trello.com/b/2ga0OPTw/makers-bnb)
+We used a [Trello Board](https://trello.com/b/2ga0OPTw/makers-bnb) to help delegate roles each day and write a to do list of tickets that we wanted to get done. 
+We used GitHub issues for tickets.
 
 ![Screenshot 2021-05-06 at 11 34 27](https://user-images.githubusercontent.com/60509804/117285862-646eab80-ae60-11eb-8c89-40e693491726.png)
 
